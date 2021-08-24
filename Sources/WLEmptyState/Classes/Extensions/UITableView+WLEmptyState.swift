@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public extension UITableView: WLEmptyStateProtocol {
+extension UITableView: WLEmptyStateProtocol {
     
     static func configure() {
         let originalSelector = #selector(reloadData)
