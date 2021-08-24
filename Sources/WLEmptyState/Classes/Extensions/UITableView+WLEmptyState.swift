@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UITableView: WLEmptyStateProtocol {
+public extension UITableView: WLEmptyStateProtocol {
     
     static func configure() {
         let originalSelector = #selector(reloadData)
@@ -55,7 +55,7 @@ extension UITableView: WLEmptyStateProtocol {
         }
     }
     
-    @objc private dynamic func swizzledReload() {
+    @objc public dynamic func swizzledReload() {
         swizzledReload()
         
         guard let emptyStateDataSource = emptyStateDataSource else { return }
