@@ -56,7 +56,7 @@ extension UITableView: WLEmptyStateProtocol {
     }
     
     @objc public dynamic func swizzledReload() {
-        swizzledReload()
+//        swizzledReload()
         
         guard let emptyStateDataSource = emptyStateDataSource else { return }
         
